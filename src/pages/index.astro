@@ -14,15 +14,14 @@ const text = await response.json();
 		<title>arde100.dev</title>
 	</head>
 	<body>
-		<h1>Portfolio</h1>
-		<p>Portviini</p>
-		<code>{text.properties.meta.updated_at}</code>
+		<h1>Weather Forecast</h1>
+		<!-- <code>{text.properties.meta.updated_at}</code>
 		<code
 			>{
 				text.properties.timeseries[0].data.instant.details
 					.air_temperature
 			}</code
-		>
+		>-->
 
 		<canvas id="weather-forecast"></canvas>
 		<script>
