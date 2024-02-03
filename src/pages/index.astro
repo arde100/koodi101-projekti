@@ -35,13 +35,13 @@ const text = await response.json();
 			const values = data.properties.timeseries.map(
 				(t) => t.data.instant.details.air_temperature,
 			);
-			new Chart(ctx, {
+			new Chart(ctx as HTMLCanvasElement, {
 				type: "line",
 				data: {
 					labels: labels,
 					datasets: [
 						{
-							label: ["Air Temperature Forecast"],
+							label: "Air Temperature Forecast",
 							data: values,
 						},
 					],
